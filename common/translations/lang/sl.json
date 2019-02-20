@@ -658,5 +658,6 @@
     "data.ONBOARD_FINAL_CONTENT__7": "How to Send via MetaMask",
     "data.ONBOARD_FINAL_CONTENT__8": "Learn More or Contact Us",
     "data.ONBOARD_FINAL_CONTENT__9": "OMG, please just let me send FFS.",
-    "data.ONBOARD_RESUME": "It looks like you didn't finish reading through these slides last time. ProTip: Finish reading through the slides 😉"
+    "data.ONBOARD_RESUME": "It looks like you didn't finish reading through these slides last time. ProTip: Finish reading through the slides 😉",
+    "data.ADDRESS": "Naslov"
 }
