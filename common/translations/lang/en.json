@@ -750,6 +750,7 @@
     "ACCESS_MESSAGE_2": "You must access your wallet in order to request a payment.",
     "ACCESS_MESSAGE_3": "You must access your wallet in order to view your wallet's information.",
     "ACCESS_MESSAGE_4": "You must access your wallet in order to view your recent transactions.",
-    "ACCESS_MESSAGE_5": "You must access your wallet in order to view your address book."
+    "ACCESS_MESSAGE_5": "You must access your wallet in order to view your address book.",
+    "NEW_KEY_TEST":"New key test"
   }
 }
