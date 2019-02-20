@@ -664,6 +664,7 @@
         "LABEL": "Nalepka",
         "INVALID_LABEL_LENGTH": "Naslov mora bit vsaj med 2 pa 50, razumeš.",
         "NEW_KEY_TEST": "Novi Ključ Test",
-        "INVALID_ADDRESS": "Vnesi pravilen ETH naslov, lepo prosim."
+        "INVALID_ADDRESS": "Vnesi pravilen ETH naslov, lepo prosim.",
+        "LABEL_ALREADY_EXISTS": "Ta naslov za to značko že obstaja."
     }
 }
