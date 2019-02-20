@@ -666,6 +666,7 @@
         "NEW_KEY_TEST": "Novi Ključ Test",
         "INVALID_ADDRESS": "Vnesi pravilen ETH naslov, lepo prosim.",
         "LABEL_ALREADY_EXISTS": "Ta naslov za to značko že obstaja.",
-        "ADDRESS_ALREADY_EXISTS": "Lalala."
+        "ADDRESS_ALREADY_EXISTS": "Lalala.",
+        "NO_LABEL_FOUND_CONTAINING": "Ni najdenih značk ki vsebujejo"
     }
 }
