@@ -663,6 +663,7 @@
         "ADDRESS": "Naslov",
         "LABEL": "Nalepka",
         "INVALID_LABEL_LENGTH": "Naslov mora bit vsaj med 2 pa 50, razumeš.",
-        "NEW_KEY_TEST": "Novi Ključ Test"
+        "NEW_KEY_TEST": "Novi Ključ Test",
+        "INVALID_ADDRESS": "Vnesi pravilen ETH naslov, lepo prosim."
     }
 }
