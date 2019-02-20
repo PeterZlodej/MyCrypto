@@ -662,6 +662,7 @@
         "ONBOARD_RESUME": "It looks like you didn't finish reading through these slides last time. ProTip: Finish reading through the slides 😉",
         "ADDRESS": "Naslov",
         "LABEL": "Nalepka",
-        "INVALID_LABEL_LENGTH": "Naslov mora bit vsaj med 2 pa 50, razumeš."
+        "INVALID_LABEL_LENGTH": "Naslov mora bit vsaj med 2 pa 50, razumeš.",
+        "NEW_KEY_TEST": "Novi Ključ Test"
     }
 }
