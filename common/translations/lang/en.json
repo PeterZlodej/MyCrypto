@@ -971,6 +971,16 @@
     "TO_FIELD_ERROR": "Enter a valid address or ENS name",
     "404_HEADER":"Page Not Found",
     "404_DESCRIPTION":"Looks like you got lost somewhere along the way. Don't worry, the wizard can help you get back!",
-    "404_BUTTON": "Go Home"
+    "404_BUTTON": "Go Home",
+    "LATEST_PRICE": "Latest Price",
+    "BALANCE": "Balance",
+    "TOKEN_ADDRESS": "Token Address",
+    "TOKEN_DECIMALS": "Token Decimals",
+    "RESOURCES": "Resources",
+    "SOCIAL": "Social",
+    "WEBSITE": "Website",
+    "WHITEPAPER": "Whitepaper",
+    "ADD_TOKEN": "Add Token",
+    "ADD_CUSTOM_TOKEN": "Add Custom Token"
   }
 }
