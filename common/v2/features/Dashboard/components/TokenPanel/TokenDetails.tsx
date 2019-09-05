@@ -12,6 +12,7 @@ import socialSlack from 'common/assets/images/social-icons/social-slack.svg';
 import socialCmc from 'common/assets/images/social-icons/social-cmc.svg';
 import websiteIcon from 'common/assets/images/icn-website.svg';
 import whitepaperIcon from 'common/assets/images/icn-whitepaper.svg';
+import { formatEther } from 'ethers/utils';
 
 const InfoWrapper = styled.div`
   display: flex;
@@ -117,7 +118,8 @@ const supportedSocialNetworks: ISocialNetwork = {
   }
 };
 
-export function TokenDetails() {
+export function TokenDetails(props) {
+  const { currentToken } = props;
   // TODO: Fetch real token details
   const details = {
     symbol: 'NRM',
@@ -172,18 +174,18 @@ export function TokenDetails() {
     <div>
       <Section noMargin={true}>
         <TwoColumnsWrapper>
-          <InfoPiece title={translateRaw('LATEST_PRICE')} value="$3,037.95" />
-          <InfoPiece title={translateRaw('BALANCE')} value="393.239 OMG" />
+          <InfoPiece title={translateRaw('LATEST_PRICE')} value="$undefined" />
+          <InfoPiece title={translateRaw('BALANCE')} value={formatEther(currentToken.balance)} />
         </TwoColumnsWrapper>
       </Section>
       <Section>
-        <InfoPiece title={translateRaw('TOKEN_ADDRESS')} value={details.address} />
+        <InfoPiece title={translateRaw('TOKEN_ADDRESS')} value={currentToken.contractAddress} />
       </Section>
       <Section>
-        <InfoPiece title={translateRaw('TOKEN_DECIMALS')} value={details.decimals} />
+        <InfoPiece title={translateRaw('TOKEN_DECIMALS')} value={currentToken.decimal} />
       </Section>
       <Section>
-        <InfoPiece title={translateRaw('TOKEN_SYMBOL')} value={details.symbol} />
+        <InfoPiece title={translateRaw('TOKEN_SYMBOL')} value={currentToken.ticker} />
       </Section>
       <Section>
         <InfoPiece

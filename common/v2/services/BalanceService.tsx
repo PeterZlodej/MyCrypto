@@ -23,3 +23,17 @@ export const getAccountBalance = async (account: StoreAccount): Promise<any[]> =
     throw new Error(err);
   }
 };
+
+export const getAllTokensBalancesOfAccount = async (account: StoreAccount, assets) => {
+  const scanner = getScanner(account.network.nodes[0]);
+  const assetAddresses = getAssetAddresses(assets)
+
+
+
+  console.log("Asset addresses", assetAddresses)
+  try {
+    return scanner.getTokensBalance(account.address, assetAddresses)
+  } catch (err) {
+    throw new Error(err);
+  }
+}

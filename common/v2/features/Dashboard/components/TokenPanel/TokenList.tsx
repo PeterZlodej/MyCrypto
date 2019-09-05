@@ -3,6 +3,7 @@ import { Typography } from '@mycrypto/ui';
 import styled from 'styled-components';
 
 import moreIcon from 'common/assets/images/icn-more.svg';
+import { formatEther } from 'ethers/utils';
 
 const TokenListWrapper = styled.div`
   max-height: 300px;
@@ -60,7 +61,7 @@ export function TokenList(props: TokenListProps) {
             <AssetName>{token.name}</AssetName>
           </Asset>
           <TokenValueWrapper>
-            <TokenValue>{token.value}</TokenValue>
+            <TokenValue>{formatEther(token.balance)}</TokenValue>
             <MoreIcon
               src={moreIcon}
               alt="More"
