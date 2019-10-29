@@ -26,6 +26,7 @@ interface CustomInputProps {
   inputError?: string;
   showEye?: boolean;
   height?: string;
+  resizable?: boolean;
 }
 
 const CustomInput = styled.input<CustomInputProps>`
@@ -63,7 +64,7 @@ const CustomTextArea = styled.textarea<CustomInputProps>`
     opacity: 1;
   }
   border-color: ${props => (props.inputError ? PASTEL_RED : '')};
-  resize: none;
+  resize:  ${props => (props.resizable ? 'default' : 'none')};
   ${props => props.height && `height: ${props.height}`}
 `;
 
@@ -107,6 +108,7 @@ interface Props {
   placeholder?: string;
   height?: string;
   isLoading?: boolean;
+  resizableTextArea?: boolean;
   onChange(event: any): void;
   onBlur?(event: any): void;
   validate?(): void | undefined;
@@ -133,7 +135,8 @@ export class InputField extends Component<Props> {
       textarea,
       placeholder,
       height,
-      isLoading
+      isLoading,
+      resizableTextArea
     } = this.props;
     return (
       <MainWrapper>
@@ -149,6 +152,7 @@ export class InputField extends Component<Props> {
               onKeyUp={this.handleKeyUp}
               placeholder={placeholder ? placeholder : ''}
               height={height}
+              resizable={resizableTextArea}
             />
           ) : (
             <CustomInput
