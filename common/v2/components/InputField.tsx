@@ -109,6 +109,7 @@ interface Props {
   height?: string;
   isLoading?: boolean;
   resizableTextArea?: boolean;
+  disabled?: boolean;
   onChange(event: any): void;
   onBlur?(event: any): void;
   validate?(): void | undefined;
@@ -136,7 +137,8 @@ export class InputField extends Component<Props> {
       placeholder,
       height,
       isLoading,
-      resizableTextArea
+      resizableTextArea,
+      disabled
     } = this.props;
     return (
       <MainWrapper>
@@ -153,6 +155,7 @@ export class InputField extends Component<Props> {
               placeholder={placeholder ? placeholder : ''}
               height={height}
               resizable={resizableTextArea}
+              disabled={disabled}
             />
           ) : (
             <CustomInput
