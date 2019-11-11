@@ -101,7 +101,7 @@ interface Props {
   name?: string;
   type?: string;
   label?: string | JSX.Element;
-  value: string;
+  value: string | undefined;
   inputError?: string | undefined;
   showEye?: boolean;
   textarea?: boolean;
@@ -110,7 +110,7 @@ interface Props {
   isLoading?: boolean;
   resizableTextArea?: boolean;
   disabled?: boolean;
-  onChange(event: any): void;
+  onChange?(event: any): void;
   onBlur?(event: any): void;
   validate?(): void | undefined;
 }
